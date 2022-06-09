@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Facebook</title>
+</head>
+<body>
+    
+    <div class="container d-flex justify-content-around ">
+
+        <div class="fb-logo">
+            <img src="img/facebook-logo.svg" alt="facebook-logo" width="300px">
+            <h3 class="ms-4">Facebook helps you connect and share<br> with the people in your life.</h3>
+
+        </div>
+
+        <!-- form start -->
+        <div class="form-container mt-5 p-3 shadow-lg bg-body rounded">
+
+            <form id="logInForm" action="user.html">
+                <div class="mb-3">
+                    <input type="text" class="form-control form-control-lg" id="inputEmail" aria-describedby="emailHelp" placeholder="Email address or phone number">
+                    <div id="emailHelp" class="form-text form-text-email">The email address or mobile number you entered isn't connected to an account. Find your account and log in.</div>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="Password">
+                    <div id="passHelp" class="form-text form-text-passwd">The password that you've entered is incorrect. <a> Forgotten password? </a> </div>
+
+                </div>
+                <div class="d-grid ">
+                    <button type="submit" class="btn btn-primary btn-lg">Log In</button>
+                </div>
+                <div class="text-center mt-3 mb-3 fs-6">
+                    <a href="#">Forgotten password?</a>
+                    <hr>
+                </div>
+
+            </form>
+            <div class="text-center">
+                <button id="CreateNewAccount" class="btn btn-lg" style="background-color: #36a420; color: white;">Create New Account</button>
+            </div>
+
+        </div>
+
+        <!-- form end -->
+
+
+    </div>
+
+
+    <!-- create new account start -->
+
+    <div class="new-account">
+
+        <div class="new-account-main-div d-flex justify-content-center align-items-center shadow-lg p-3 mb-5 bg-body rounded">
+
+            <form id="form2" action="theNewAccount.html" class="new-account-form" style="width: 100%;">
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="fs-3 fw-bold" style="margin-bottom: 0;">Sign Up</p>
+                        <p style="font-size: 12px;">It's quick and easy.</p>
+                        
+                    </div>
+                    
+                    <div>
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+
+                </div>
+                <hr style="margin-top: 0;">
+                <div class="mb-3 d-flex justify-content-between">
+
+                    <input type="text" class="form-control me-1 form2" id="firstNameForm2" placeholder="First Name" >
+                    <input type="text" class="form-control ms-1 form2" id="surNameForm2" placeholder="Surname" >
+
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control form2" id="emailForm2" placeholder="Mobile number or email address" >
+                </div>
+
+                <div class="mb-3">
+                    <input type="password" class="form-control form2" id="inputPasswordForm2" placeholder="New password">
+                    <div class="password-warning">
+                        <p>The Password has to be atleast 6 characters</p>
+                    </div>
+                </div>
+                <!-- dropdown buttons start -->
+                <div><p style="font-size: 12px; margin-bottom:0;">Date of birth <i class="fa-solid fa-circle-question"></i> </p></div>
+                <div class="d-flex justify-content-between mb-4">
+
+
+                    <select class="form-select" aria-label="Default select example">
+
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+
+
+                    <select class="form-select ms-2 me-2" aria-label="Default select example">
+                        <option value="jan">Jan</option>
+                        <option value="feb">Feb</option>
+                        <option value="mar">Mar</option>
+                        <option value="apr">Apr</option>
+                        <option value="may">May</option>
+                        <option value="jun">Jun</option>
+                        <option value="jul">Jul</option>
+                        <option value="aug">Aug</option>
+                        <option value="sep">Sep</option>
+                        <option value="oct">Oct</option>
+                        <option value="nov">Nov</option>
+                        <option value="dec">Dec</option>
+                    </select>
+
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2006">2006</option>
+                    </select>
+
+                </div>
+
+
+                <div><p style="font-size: 12px; margin-bottom:0;">Gender <i class="fa-solid fa-circle-question" ></i> </p></div>
+                <div class="d-flex justify-content-between">
+
+                    <div class=" btn btn-outline-secondary form2-gender d-flex justify-content-between" disabled >Female <input class="form-check-input" type="radio" name="gender" id="femaleForm2" value="female"  checked>
+                    </div>
+                    <div class="btn btn-outline-secondary form2-gender d-flex justify-content-between" disabled>Male <input class="form-check-input" type="radio" name="gender" id="maleForm2" value="male">
+                    </div>
+                    <div class="btn btn-outline-secondary form2-gender d-flex justify-content-between" disabled>Custom <input class="form-check-input" type="radio" name="gender" id="customForm2" value="custom">
+                    </div>
+
+                </div>
+
+                <!-- dropdown buttons end -->
+
+                <div class="small-font mt-3">
+                    <p>
+                        People who use our service may have uploaded your contact information to Facebook. Learn more.
+                    </p>
+                </div>
+                <div class="small-font">
+                    <p>
+                        By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.
+                    </p>
+                </div>
+
+
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn form2-submit" style="color:white;">Sign Up</button>
+                </div>
+
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- create new account end -->
+
+
+
+
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/all.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
